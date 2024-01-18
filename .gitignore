@@ -7,7 +7,7 @@
 .DS_Store
 .classpath
 .project
-.gitkeep
+
 ### C++ ###
 # Prerequisites
 *.d
