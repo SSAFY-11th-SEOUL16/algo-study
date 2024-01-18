@@ -9,6 +9,9 @@
 - 리뷰 후 새로운 문제 라이브 문제 풀기 진행 (40분 정도 문제 시도 → 리뷰)
 - 매주 수요일 23:59분 전까지 5문제 풀이 후 제출 (미제출 3회 이상시 퇴출)
 
+### Fork & PR
+- 추후 추가 예정
+
 
 ### 📁Folder Tree
 주차별로 폴더가 존재하며 해당 폴더 아래에 개인 폴더가 존재하며 해당 폴더 아래에 문제 commit<br>
@@ -36,7 +39,6 @@ EX) 김싸피 : BOJ 2222 커밋예시
 ```
 
 ### 👨‍🎓Contributor
-
 |![서빈](https://avatars.githubusercontent.com/u/70849467?v=4)|![형민](https://avatars.githubusercontent.com/u/92067099?v=4)|![승진](https://avatars.githubusercontent.com/u/59600377?v=4)|![지환](https://avatars.githubusercontent.com/u/64758861?v=4)|![보연](https://avatars.githubusercontent.com/u/55133692?v=4)|
 |:---:|:---:|:---:|:---:|:---:|
 |[서빈](https://github.com/leeseobin00)|[형민](https://github.com/fkgnssla)|[승진](https://github.com/maison01006)|[지환](https://github.com/stophwan)|[보연](https://github.com/btothey99)|
