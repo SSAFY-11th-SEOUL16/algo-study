@@ -1,6 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,eclipse,c++,visualstudio,visualstudiocode,intellij,java,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,eclipse,c++,visualstudio,visualstudiocode,intellij,java,python
 ### custom ###
+!week1/*
 */.classpath
 */.project
 */.DS_Store
