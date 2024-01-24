@@ -19,7 +19,7 @@ public class Main {
 			solution(second + tmp, X - tmp);
 		} else if (X <= 0) {
 			long tmp = K - X;
-			solution(second + tmp, X - tmp);
+			solution(second + tmp, X + tmp);
 		} else {
 			solution(second, X *= 2);
 			solution(second + 1, X + 1);
