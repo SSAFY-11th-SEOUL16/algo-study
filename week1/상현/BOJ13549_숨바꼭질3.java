@@ -84,4 +84,50 @@ public class BOJ13549_숨바꼭질3 {
         }
         return result;
     }
+
+     private static int bfs3(int start, int target) {
+        int[] d = {2, -1, 1};
+
+        int[] count = new int[100001];
+        boolean[] visit = new boolean[100001];
+      
+        int result = Integer.MAX_VALUE;
+
+        if (start >= target) {
+			return start - target;
+		}
+
+        Queue<Integer> q = new LinkedList<>();
+        q.add(start);
+        visit[start] = true;
+        while (!q.isEmpty()) {
+            int now = q.poll();
+            int time = count[now];
+         
+            for (int i = 0; i < 3; i++) {
+                int next = i == 0 ? now * d[i] : now + d[i];
+                if (next >= 0 && next <= 100000 && !visit[next]) {
+                	visit[next] = true;
+                    q.add(next);
+                    
+                    if (i == 0) {
+                        if (next == target) {
+                            result = Math.min(result, time);
+                            break;
+                        }
+
+                        count[next] = time; 
+                    } else {
+                        if (next == target) {
+                            result = Math.min(result, time + 1);
+                            break;
+                        }
+
+                        count[next] = time + 1;
+                    }
+                }
+            }
+        }
+        return result;
+    }
 }
