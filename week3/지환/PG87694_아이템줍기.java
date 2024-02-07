@@ -1,6 +1,8 @@
+package week3.지환;
+
 import java.util.*;
 
-class Solution {
+class PG87694_아이템줍기 {
     int[][] graph = new int[101][101];
     int[][] visited = new int[101][101];
     int[] dx = {-1,1,0,0};
