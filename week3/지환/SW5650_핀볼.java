@@ -1,4 +1,4 @@
-package week2.지환;
+package week3.지환;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
