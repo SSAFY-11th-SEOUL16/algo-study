@@ -52,6 +52,9 @@ public class BJ16987_계란으로계란치기 {
 				continue;
 			if (eggs[idx].s <= 0)
 				continue;
+			if (eggs[i].s <= 0)
+				continue;
+			
 			breakEgg(idx, i);
 
 			if (eggs[idx].s <= 0) {
