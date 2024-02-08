@@ -62,8 +62,6 @@ public class Main {
 			return;
 		}
 
-		check(guitarCnt);
-
 		// 포함한다.
 		play(start, 1);
 		dfs(guitarCnt + 1, start + 1);
