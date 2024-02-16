@@ -55,22 +55,22 @@ EX) 김싸피 : BOJ 2222 커밋예시
 
 ### Study Plan
 |주차|문제|
-|------|---|
-|1주차|숨바꼭질 3(골5 - https://www.acmicpc.net/problem/13549)|
+|:----|-----|
+|<span style="color:purple">1주차<span>|숨바꼭질 3(골5 - https://www.acmicpc.net/problem/13549)|
 ||안전영역 (실1 - https://www.acmicpc.net/problem/2468)|
 ||Yonsei TOTO (실3 -https://www.acmicpc.net/problem/12018)|
 ||점프(실1 -https://www.acmicpc.net/problem/1890)|
 ||구간 합 구하기 5(실1-https://www.acmicpc.net/problem/11660)|
-|2주차|미생물 격리 (모의A - https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV597vbqAH0DFAVl)|
+|<span style="color:purple">2주차<span>|미생물 격리 (모의A - https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV597vbqAH0DFAVl)|
 ||상어 초등학교(골5 (삼성SW역량테스트 기출) -https://www.acmicpc.net/problem/21608)|
 ||소-난다!(실2 - https://www.acmicpc.net/problem/19699)|
 ||평범한 배낭(골5 - https://www.acmicpc.net/problem/12865)|
 ||RGB거리(실1 - https://www.acmicpc.net/problem/1149)|
-|3주차|핀볼 게임(모의 SW 역량테스트 - https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRF8s6ezEDFAUo)|
+|<span style="color:purple">3주차<span>|핀볼 게임(모의 SW 역량테스트 - https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRF8s6ezEDFAUo)|
 ||아이템줍기(Lv3 - https://school.programmers.co.kr/learn/courses/30/lessons/87694)|
 ||계란으로 계란치기(골5 - https://www.acmicpc.net/problem/16987)|
 ||기타콘서트(실1 - https://www.acmicpc.net/problem/1497)|
 ||폴짝폴짝(실2 - https://www.acmicpc.net/problem/1946)|
-|4주차|보석상자 (실1 - https://www.acmicpc.net/problem/2792)|
+|<span style="color:purple">4주차<span>|보석상자 (실1 - https://www.acmicpc.net/problem/2792)|
 ||동물원 (골5 - https://www.acmicpc.net/problem/12907)|
 ||키로거(실2  - https://www.acmicpc.net/problem/5397)|
