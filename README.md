@@ -53,3 +53,11 @@ EX) 김싸피 : BOJ 2222 커밋예시
 |![상현](https://avatars.githubusercontent.com/u/106962275?s=96&v=4)|![경민](https://avatars.githubusercontent.com/u/81904943?v=4)|![유리](https://avatars.githubusercontent.com/u/78342803?v=4)|![수한](https://avatars.githubusercontent.com/u/43841214?v=4)|![현우](https://avatars.githubusercontent.com/u/129820807?v=4)|
 |[상현](https://github.com/tkdgus97)|[경민](https://github.com/gangintheremark)|[유리](https://github.com/Yuri-CHOE)|[수한](https://github.com/sem1308)|[현우](https://github.com/cookingTorch)|
 
+### Study Plan
+|주차|문제|
+|------|---|
+|1주차|숨바꼭질 3(골5 - https://www.acmicpc.net/problem/13549)|
+||안전영역 (실1 - https://www.acmicpc.net/problem/2468)|
+||Yonsei TOTO (실3 -https://www.acmicpc.net/problem/12018)|
+||점프(실1 -https://www.acmicpc.net/problem/1890)|
+||구간 합 구하기 5(실1-https://www.acmicpc.net/problem/11660)|
