@@ -1,38 +1,20 @@
 import sys
-
-def count_star(x,y):
-    cnt = 0
-    for i in range(x,L + x):
-        for j in range(y,L + y):
-            if maps[i][j] == 1:
-                cnt += 1
-    return cnt
 input = sys.stdin.readline
 
-N, M, L, K = map(int, input().rstrip().split())
+N, M, L, K = map(int, input().split())
+res = 0
+star = []
 
-maps = [[0 for _ in range(M + 1)] for _ in range(N + 1)]
-visited =[[False for _ in range(M + 1)] for _ in range(N + 1)]
-stars = []
+for i in range(K):
+    x, y = map(int, input().split())
+    star.append([x, y])
 
-max_cnt = 0
-
-for _ in range(K):
-    x, y = map(int, input().rstrip().split())
-    if x + L >= N:
-        x -= x+L-N + 1
-    if y + L >= M:
-        y -= y+L-N + 1
-    stars.append((x, y))
-    maps[x][y] = 1
-    
-
-for x, y in stars:
-    print(x,y)
-    for i in range(L):
-        if not visited[x][y + i] and y + i < M :
-            max_cnt = max(max_cnt, count_star(x, y + i))
-            visited[x][y + i] = True
-
-print(max_cnt)
-        
+for i in range(K):
+    for j in range(K):
+        cnt = 0
+        for k in range(K):
+            if star[i][0] <= star[k][0] and star[k][0] <= star[i][0]+L and star[j][1] <= star[k][1] and star[k][1] <= star[j][1]+L:
+                cnt += 1
+        res = max(res, cnt)
+ans = K-res
+print(ans)
