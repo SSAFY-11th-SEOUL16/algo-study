@@ -12,8 +12,10 @@ import java.util.StringTokenizer;
 public class SW_1953_탈주범검거 {
 	static int n;
 	static int m;
+	//파이프에서 갈수 있는 방향을 담은 리스트
 	static List<int[]>[] d = new ArrayList[8];
 	public static void main(String[] args) throws Exception {
+		//리스트 초기화 ex) 1번 파이브는 상하좌우 갈 수 있다.
 		d[1] = new ArrayList<>(Arrays.asList(new int[]{-1,0}, new int[]{1,0}, new int[]{0,-1}, new int[]{0,1}));
 		d[2] = new ArrayList<>(Arrays.asList(new int[]{-1,0}, new int[]{1,0}));
 		d[3] = new ArrayList<>(Arrays.asList(new int[]{0,-1}, new int[]{0,1}));
@@ -37,7 +39,7 @@ public class SW_1953_탈주범검거 {
 				}
 			}
 			boolean[][] visited = new boolean[n][m];
-			
+			//1시간마다 파이르를 따라 이동할 수 있는 블록을 구해야하므로 BFS
 			Queue<int[]> q = new LinkedList<>();
 			q.add(new int[]{r,c});
 			int cnt = 0;
@@ -65,7 +67,8 @@ public class SW_1953_탈주범검거 {
 			System.out.println("#" + t + " " + cnt);
 		}
 	}
-	
+	//갈 수 있는 방향이긴 한데 가려는 방향에 파이프가 이어져 있지 않은 경우가 있다.
+	//오른쪽으로 내가 간다면 해당 파이프는 왼쪽으로 길이 나있어야함.
 	private static boolean checkPosPipe(int dx, int dy, int nextBoard) {
 		for(int[] d: d[nextBoard]) {
 			if(d[0] == -dx && d[1] == -dy) {
