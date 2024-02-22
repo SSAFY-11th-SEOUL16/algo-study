@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
-
+//Java 134ms
 public class SW_1953_탈주범검거 {
 	static int n;
 	static int m;
