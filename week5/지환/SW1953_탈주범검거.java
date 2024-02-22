@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 public class SW_1953_탈주범검거 {
 	static int n;
 	static int m;
-	//파이프에서 갈수 있는 방향을 담은 리스트
+	//파이프에서 갈수 있는 방향을 담은 리스트 
 	static List<int[]>[] d = new ArrayList[8];
 	public static void main(String[] args) throws Exception {
 		//리스트 초기화 ex) 1번 파이브는 상하좌우 갈 수 있다.
