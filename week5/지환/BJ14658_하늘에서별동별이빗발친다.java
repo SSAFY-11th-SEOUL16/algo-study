@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+//Java(148ms)
+public class BJ14658_하늘에서별동별이빗발친다 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -19,7 +20,9 @@ public class Main {
             int y = Integer.parseInt(st.nextToken());
             stars[i][0] = x; stars[i][1] = y;
         }
+        //별을 품는 최소한의 개수는 1이 되어야함.
         int max = 1;
+        //별 두개를 가장자리에 놓으며, 오른쪽 아래로 내려가는 사각형을 구한다.(나머지 방향은 위에서 계산을 하니까 구해줄 필요가 없다)
         for(int i=0; i<k; i++) {
         	for(int j=i+1; j<k; j++) {
         		int res = 0;
