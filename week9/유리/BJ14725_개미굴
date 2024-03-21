@@ -1,0 +1,80 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main {
+	static class hole implements Comparable<hole>{
+		int k;
+		String [] data;
+
+		hole(int k, String [] data){
+			this.k = k;
+			this.data = data;
+		}
+		
+		@Override
+		public int compareTo(hole o) {
+			for(int x = 0; x < Math.min(data.length, o.data.length); x++) {
+				if(data[x].equals(o.data[x])) {
+					continue;
+				}else {
+					return data[x].compareTo(o.data[x]);
+				}
+			}
+			return 0;
+		}
+	}
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer str;
+		
+		int n = Integer.parseInt(br.readLine());
+		hole [] data = new hole[n];
+		String [] tmpData;
+		int k;
+		
+		for(int i = 0; i < n; i++) {
+			str = new StringTokenizer(br.readLine());
+			k = Integer.parseInt(str.nextToken());
+			tmpData = new String[k];
+			for(int x = 0; x< k; x++) {
+				tmpData[x] = str.nextToken();
+			}
+			data[i]= new hole(k, tmpData);
+		}
+		
+		Arrays.sort(data);
+		/**
+		for(int x = 0; x <n; x++) {
+			for(int y = 0; y < data[x].k; y++) {
+				System.out.print(data[x].data[y]+"\t");
+			}
+			System.out.println();
+		}
+		**/
+		for(int x = 0; x <data[0].k; x++) {
+			for(int y = 0; y < x; y++) {
+				System.out.print("--");
+			}
+			System.out.println(data[0].data[x]);
+		}
+		
+		for(int i = 1; i < n; i++) {
+			boolean check = true;
+			for(int x = 0; x <data[i].k; x++) {
+				if(check && data[i-1].k > x && data[i-1].data[x].equals(data[i].data[x])) {
+					//System.out.println("test/"+data[i-1].k+"/"+ x);
+					//System.out.println("test1/"+data[i-1].data[x]+"/"+data[i].data[x]);
+					continue;
+				}else {
+					for(int y = 0; y < x; y++) {
+						System.out.print("--");
+					}
+					System.out.println(data[i].data[x]);
+					check = false;
+				}
+			}
+		}
+	}
+}
