@@ -6,6 +6,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+//Java8(2036ms)
+//가장 최소의 비용으로 두개로 분할
+//최소의 비용으로 연결할 수 있는 것은 크루스칼 알고리즘 사용
+//가장 큰 비용의 개수를 빼면 된다.
 public class BJ1642_도시분할계획 {
 	static int[] parents;
 	public static void main(String[] args) throws Exception {
