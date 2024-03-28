@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//Java8(440ms)
+//head배열에 직속 상관을 저장
+//dp배열에 칭찬 수치 저장. dp[n] = dp[직속상관] + n번째 직원가 받은 칭찬
 public class BJ14267_회사문화1 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
