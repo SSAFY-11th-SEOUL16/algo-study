@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PG_81303_표편집 {
+class PG81303_표편집 {
     public String solution(int n, int k, String[] cmd) {
         //C명령어일때 넣어주는 스택
         Stack<Integer> delete = new Stack<>();
