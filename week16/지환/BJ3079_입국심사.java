@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 //Java8 264ms
-public class BJ_3079_입국심사 {
+public class BJ3079_입국심사 {
 	static int n, m;
 	static long[] times;
 	static long maxTime;
