@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-//Java8, 348ms
+//Java8, 338ms
 public class BJ7490_0만들기 {
 	static StringBuilder res = new StringBuilder();
 	public static void main(String[] args) throws Exception {
@@ -19,6 +19,7 @@ public class BJ7490_0만들기 {
 
 	public static void dfs(int idx, int len, int n, StringBuilder sb) {
 		if(idx == n+1) {
+			//System.out.println(sb);
 			if(calculate(sb.toString()) == 0) {
 				res.append(sb).append("\n");
 			}
@@ -27,20 +28,18 @@ public class BJ7490_0만들기 {
 
 		sb.append(" ").append(idx);
 		dfs(idx+1, len+2, n, sb);
-		sb.deleteCharAt(sb.length()-1);
-		sb.deleteCharAt(sb.length()-1);
+		sb.delete(len, len+2);
 		sb.append("+").append(idx);
 		dfs(idx+1, len+2, n, sb);
-		sb.deleteCharAt(sb.length()-1);
-		sb.deleteCharAt(sb.length()-1);
+		sb.delete(len, len+2);
 		sb.append("-").append(idx);
 		dfs(idx+1, len+2, n, sb);
-		sb.deleteCharAt(sb.length()-1);
-		sb.deleteCharAt(sb.length()-1);
+		sb.delete(len, len+2);
 	}
 
 	public static int calculate(String str) {
 		str = str.replaceAll(" ", "");
+		//System.out.println(str);
 		String[] numbers = str.split("[+,-]");
 		int idx = 1;
 		int sum = Integer.parseInt(numbers[0]);
